@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keçiören Pınarbaşı Veteriner Kliniği | Ankara</title>
+    <meta name="description" content="Keçiören Pınarbaşı Veteriner Kliniği - Ankara'da kedi, köpek ve tüm evcil dostlarınız için modern veteriner hizmetleri. Aşı, cerrahi, kısırlaştırma, pet kuaför, otel.">
+    <meta name="keywords" content="Keçiören veteriner, Pınarbaşı veteriner, Ankara veteriner kliniği, kedi veteriner, köpek veteriner, aşı, kısırlaştırma">
+    <meta property="og:title" content="Keçiören Pınarbaşı Veteriner Kliniği">
+    <meta property="og:description" content="Ankara Keçiören'de evcil dostlarınız için profesyonel veteriner hizmetleri.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://furkandogmus.github.io/kecioren-pinarbasi-veteriner/">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #f8f9fa;
+            color: #1a1a2e;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        a { text-decoration: none; color: inherit; }
+        img { max-width: 100%; display: block; }
+        .container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+
+        /* =========== TOP BAR =========== */
+        .top-bar {
+            background: #1a1a2e;
+            color: #c4c4d4;
+            padding: 10px 0;
+            font-size: 13px;
+        }
+        .top-bar-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .top-bar-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .top-bar-left i { color: #4ade80; width: 16px; }
+        .top-bar-right {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .top-bar-right a {
+            color: #c4c4d4;
+            transition: color 0.2s;
+            font-size: 15px;
+        }
+        .top-bar-right a:hover { color: #fff; }
+
+        /* =========== HEADER =========== */
+        .main-header {
+            background: #fff;
+            border-bottom: 1px solid #e8e8ee;
+            padding: 16px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-grid {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 24px;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .brand-icon {
+            width: 48px; height: 48px;
+            background: linear-gradient(135deg, #4ade80, #22c55e);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+        .brand-text h1 {
+            font-size: 20px;
+            font-weight: 800;
+            color: #1a1a2e;
+            line-height: 1.2;
+        }
+        .brand-text span {
+            font-size: 12px;
+            color: #6b7280;
+            font-weight: 500;
+        }
+        .main-nav {
+            display: flex;
+            gap: 4px;
+        }
+        .main-nav a {
+            padding: 8px 18px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #4b5563;
+            transition: all 0.2s;
+        }
+        .main-nav a:hover,
+        .main-nav a.active { background: #f0fdf4; color: #16a34a; }
+        .header-cta {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #22c55e, #16a34a);
+            color: #fff;
+            padding: 10px 22px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+        .header-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(22, 163, 74, 0.3);
+        }
+
+        /* Mobile menu */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: #1a1a2e;
+            cursor: pointer;
+        }
+
+        /* =========== HERO =========== */
+        .hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            padding: 72px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .hero-inner {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(74, 222, 128, 0.15);
+            color: #4ade80;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 100px;
+            margin-bottom: 20px;
+        }
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 42px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 16px;
+        }
+        .hero h1 span { color: #4ade80; }
+        .hero p {
+            font-size: 16px;
+            color: #9ca3af;
+            line-height: 1.7;
+            margin-bottom: 28px;
+            max-width: 520px;
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 28px;
+            background: linear-gradient(135deg, #22c55e, #16a34a);
+            color: #fff;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(22, 163, 74, 0.3);
+        }
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 28px;
+            background: rgba(255,255,255,0.08);
+            color: #fff;
+            border-radius: 10px;
+            font-weight: 500;
+            transition: all 0.2s;
+            border: 1px solid rgba(255,255,255,0.12);
+        }
+        .btn-secondary:hover { background: rgba(255,255,255,0.14); }
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-image-card {
+            width: 100%;
+            max-width: 400px;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 20px;
+            padding: 40px 32px;
+            text-align: center;
+        }
+        .hero-image-card .big-icon { font-size: 80px; margin-bottom: 16px; }
+        .hero-image-card h3 { font-size: 18px; margin-bottom: 6px; }
+        .hero-image-card p { font-size: 13px; color: #9ca3af; margin-bottom: 0; }
+
+        /* =========== STATS STRIP =========== */
+        .stats-strip {
+            background: #fff;
+            border-bottom: 1px solid #e8e8ee;
+            padding: 24px 0;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+        .stat-item {
+            text-align: center;
+            padding: 8px;
+        }
+        .stat-number {
+            font-size: 28px;
+            font-weight: 800;
+            color: #16a34a;
+        }
+        .stat-label {
+            font-size: 13px;
+            color: #6b7280;
+            margin-top: 4px;
+        }
+
+        /* =========== HAKKIMIZDA =========== */
+        .section { padding: 72px 0; }
+        .section-alt { background: #fff; }
+        .section-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .section-header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            font-weight: 800;
+            color: #1a1a2e;
+            margin-bottom: 12px;
+        }
+        .section-header p {
+            color: #6b7280;
+            font-size: 15px;
+            max-width: 560px;
+            margin: 0 auto;
+        }
+        .section-header .accent-line {
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #22c55e, #4ade80);
+            border-radius: 4px;
+            margin: 16px auto 0;
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+        .about-text p {
+            color: #4b5563;
+            margin-bottom: 16px;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+        .about-text .feature-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+        .about-text .feature-list li {
+            padding: 6px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+        }
+        .about-text .feature-list li i { color: #22c55e; width: 20px; }
+        .about-image {
+            background: #f0fdf4;
+            border-radius: 16px;
+            padding: 48px 32px;
+            text-align: center;
+        }
+        .about-image .big-icon { font-size: 96px; }
+
+        /* =========== HİZMETLER =========== */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .service-card {
+            background: #fff;
+            border: 1px solid #e8e8ee;
+            border-radius: 14px;
+            padding: 28px 24px;
+            transition: all 0.25s;
+        }
+        .service-card:hover {
+            border-color: #bbf7d0;
+            box-shadow: 0 8px 32px rgba(34, 197, 94, 0.08);
+            transform: translateY(-4px);
+        }
+        .service-icon {
+            width: 48px;
+            height: 48px;
+            background: #f0fdf4;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            margin-bottom: 16px;
+        }
+        .service-card h3 {
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #1a1a2e;
+        }
+        .service-card p {
+            font-size: 14px;
+            color: #6b7280;
+            line-height: 1.6;
+        }
+
+        /* =========== İLETİŞİM =========== */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        .contact-info { display: flex; flex-direction: column; gap: 24px; }
+        .contact-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            background: #fff;
+            border: 1px solid #e8e8ee;
+            border-radius: 12px;
+            padding: 20px;
+        }
+        .contact-icon {
+            width: 44px; height: 44px;
+            background: #f0fdf4;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: #16a34a;
+            flex-shrink: 0;
+        }
+        .contact-card h4 { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+        .contact-card p { font-size: 14px; color: #6b7280; }
+        .contact-card a { color: #16a34a; font-weight: 500; }
+        .contact-card a:hover { text-decoration: underline; }
+
+        .hours-table {
+            background: #fff;
+            border: 1px solid #e8e8ee;
+            border-radius: 12px;
+            padding: 24px;
+        }
+        .hours-table h3 { font-size: 16px; font-weight: 700; margin-bottom: 16px; }
+        .hours-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #f3f4f6;
+            font-size: 14px;
+        }
+        .hours-row:last-child { border-bottom: none; }
+        .hours-row .day { color: #4b5563; font-weight: 500; }
+        .hours-row .time { color: #16a34a; font-weight: 600; }
+
+        /* Map */
+        .map-container {
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #e8e8ee;
+            margin-top: 24px;
+        }
+
+        /* =========== FOOTER =========== */
+        .footer {
+            background: #1a1a2e;
+            color: #9ca3af;
+            padding: 40px 0 20px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 32px;
+        }
+        .footer-brand .brand-text h1 { color: #fff; font-size: 18px; }
+        .footer-brand p { font-size: 13px; margin-top: 12px; line-height: 1.7; }
+        .footer-col h4 {
+            font-size: 13px;
+            font-weight: 600;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            margin-bottom: 14px;
+        }
+        .footer-col a {
+            display: block;
+            font-size: 14px;
+            padding: 5px 0;
+            color: #9ca3af;
+            transition: color 0.2s;
+        }
+        .footer-col a:hover { color: #4ade80; }
+        .footer-bottom {
+            border-top: 1px solid #2a2a4e;
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        /* =========== WHATSAPP FLOAT =========== */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 56px;
+            height: 56px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            color: #fff;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            z-index: 200;
+            transition: all 0.2s;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 28px rgba(37, 211, 102, 0.5);
+        }
+
+        /* =========== RESPONSIVE =========== */
+        @media (max-width: 1024px) {
+            .hero-inner { grid-template-columns: 1fr; text-align: center; }
+            .hero p { margin: 0 auto 28px; }
+            .hero-buttons { justify-content: center; }
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+            .contact-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 768px) {
+            .menu-toggle { display: block; }
+            .main-nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #fff;
+                flex-direction: column;
+                padding: 12px 24px;
+                border-bottom: 1px solid #e8e8ee;
+                box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+            }
+            .main-nav.open { display: flex; }
+            .header-cta { display: none; }
+            .header-cta.mobile-visible { display: flex; }
+            .hero h1 { font-size: 30px; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .services-grid { grid-template-columns: 1fr; }
+            .about-grid { grid-template-columns: 1fr; }
+            .section { padding: 48px 0; }
+            .section-header h2 { font-size: 26px; }
+            .footer-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 480px) {
+            .top-bar-left { flex-direction: column; align-items: flex-start; gap: 4px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ===== TOP BAR ===== -->
+<div class="top-bar">
+    <div class="container">
+        <div class="top-bar-inner">
+            <div class="top-bar-left">
+                <span><i class="fas fa-map-marker-alt"></i> Pınarbaşı, Aşıkpaşa Cd. No:53, Keçiören/Ankara</span>
+                <span><i class="fas fa-clock"></i> 09:00 - 21:00 (Haftanın Her Günü)</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="https://www.instagram.com/keciorenpinarbasiveteriner" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/keciorenpinarbasiveteriner" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+                <a href="tel:+905058778488"><i class="fas fa-phone-alt"></i> 0505 877 84 88</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== HEADER ===== -->
+<header class="main-header">
+    <div class="container">
+        <div class="header-grid">
+            <div class="brand">
+                <div class="brand-icon">🐾</div>
+                <div class="brand-text">
+                    <h1>Pınarbaşı Veteriner</h1>
+                    <span>Keçiören · Ankara</span>
+                </div>
+            </div>
+            <nav class="main-nav" id="mainNav">
+                <a href="#" class="active">Ana Sayfa</a>
+                <a href="#hakkimizda">Hakkımızda</a>
+                <a href="#hizmetler">Hizmetler</a>
+                <a href="#iletisim">İletişim</a>
+            </nav>
+            <a href="tel:+905058778488" class="header-cta">
+                <i class="fas fa-phone-alt"></i> Hemen Ara
+            </a>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menüyü aç/kapat">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-inner">
+            <div>
+                <div class="hero-badge"><i class="fas fa-shield-alt"></i> Güvenilir Veteriner Hizmeti</div>
+                <h1>Dostlarınız İçin <span>En İyi Bakım</span></h1>
+                <p>Keçiören Pınarbaşı'nda modern tıbbi donanım ve sevgi dolu yaklaşımımızla evcil hayvanlarınızın sağlığını güvence altına alıyoruz. Aşı, cerrahi, kısırlaştırma, diş bakımı ve daha fazlası.</p>
+                <div class="hero-buttons">
+                    <a href="tel:+905058778488" class="btn-primary">
+                        <i class="fas fa-phone-alt"></i> 0505 877 84 88
+                    </a>
+                    <a href="https://wa.me/905058778488" target="_blank" rel="noopener" class="btn-secondary">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-card">
+                    <div class="big-icon">🐕</div>
+                    <h3>Profesyonel Veteriner</h3>
+                    <p>Uzman kadromuzla 7 gün 09:00-21:00 hizmetinizdeyiz</p>
+                    <div style="margin-top:20px;display:flex;justify-content:center;gap:20px;">
+                        <span style="font-size:32px;">🐱</span>
+                        <span style="font-size:32px;">🐰</span>
+                        <span style="font-size:32px;">🐦</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== STATS ===== -->
+<section class="stats-strip">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">43+</div>
+                <div class="stat-label">Hizmet Kategorisi</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">7/7</div>
+                <div class="stat-label">Açık (09:00-21:00)</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">🐾</div>
+                <div class="stat-label">Kedi · Köpek · Tüm Dostlar</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">📞</div>
+                <div class="stat-label">7/24 Telefon Destek</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== HAKKIMIZDA ===== -->
+<section class="section section-alt" id="hakkimizda">
+    <div class="container">
+        <div class="section-header">
+            <h2>Hakkımızda</h2>
+            <p>Keçiören Pınarbaşı'nda evcil dostlarınız için güvenilir bir adres</p>
+            <div class="accent-line"></div>
+        </div>
+        <div class="about-grid">
+            <div class="about-text">
+                <p><strong>Keçiören Pınarbaşı Veteriner Kliniği</strong>, Ankara Keçiören'de modern tıbbi donanımı ve deneyimli kadrosuyla evcil hayvanlarınıza en kaliteli sağlık hizmetini sunmaktadır.</p>
+                <p>Kediler, köpekler ve tüm evcil dostlarınız için koruyucu hekimlikten cerrahi operasyonlara, aşılamadan pet kuaföre kadar geniş bir yelpazede hizmet veriyoruz.</p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check-circle"></i> Deneyimli veteriner hekim kadrosu</li>
+                    <li><i class="fas fa-check-circle"></i> Modern tanı ve tedavi ekipmanları</li>
+                    <li><i class="fas fa-check-circle"></i> Sevgi dolu ve hijyenik ortam</li>
+                    <li><i class="fas fa-check-circle"></i> Haftanın 7 günü kesintisiz hizmet</li>
+                    <li><i class="fas fa-check-circle"></i> Uygun fiyat politikası</li>
+                </ul>
+            </div>
+            <div class="about-image">
+                <div class="big-icon">🏥</div>
+                <h3 style="font-size:20px;margin-top:16px;">Modern Klinik Ortamı</h3>
+                <p style="color:#6b7280;font-size:14px;margin-top:8px;">Son teknoloji cihazlarla donatılmış kliniğimizde dostlarınız güvende</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== HİZMETLER ===== -->
+<section class="section" id="hizmetler">
+    <div class="container">
+        <div class="section-header">
+            <h2>Hizmetlerimiz</h2>
+            <p>Evcil dostlarınız için kapsamlı veteriner hizmetleri</p>
+            <div class="accent-line"></div>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">💉</div>
+                <h3>Aşılama & Koruyucu Hekimlik</h3>
+                <p>Kedi ve köpekler için eksiksiz aşı takvimi, iç-dış parazit tedavileri ve düzenli sağlık kontrolleri.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🩺</div>
+                <h3>Genel Muayene & Check-Up</h3>
+                <p>Kapsamlı fiziksel muayene, hemogram, kan biyokimya, hormon analizleri ve tam kan sayımı.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔬</div>
+                <h3>Cerrahi Müdahaleler</h3>
+                <p>Gaz anestezisi ile güvenli cerrahi operasyonlar, ortopedik müdahaleler ve yumuşak doku cerrahisi.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">✂️</div>
+                <h3>Kısırlaştırma</h3>
+                <p>Kedi ve köpeklerde güvenli kısırlaştırma operasyonları, modern anestezi ve steril koşullarda.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🦷</div>
+                <h3>Diş Sağlığı & Ağız Bakımı</h3>
+                <p>Diş temizliği, diş çekimi ve ağız sağlığı hizmetleri ile dostlarınızın gülüşünü koruyun.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🩻</div>
+                <h3>Görüntüleme & Röntgen</h3>
+                <p>Dijital röntgen (CR Röntgen), radyografi ile hızlı ve doğru teşhis imkanı.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">👁️</div>
+                <h3>Göz Tedavileri</h3>
+                <p>Göz muayenesi, enfeksiyon tedavileri ve oftalmolojik müdahaleler.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🏠</div>
+                <h3>Pet Otel & Bakım</h3>
+                <p>Tatil veya seyahatlerinizde dostlarınızı güvenle bırakabileceğiniz konforlu pet otel hizmeti.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">✂️</div>
+                <h3>Pet Kuaför</h3>
+                <p>Profesyonel tıraş ve bakım hizmetleri ile dostlarınız hem sağlıklı hem şık görünsün.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🛒</div>
+                <h3>Pet Ürünleri & Mama</h3>
+                <p>Kaliteli kedi-köpek mamaları, vitaminler, oyuncaklar ve aksesuarlar.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🩹</div>
+                <h3>Anestezi</h3>
+                <p>Güvenli gaz anestezisi ile operasyon öncesi ve sonrası titiz takip.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🧪</div>
+                <h3>Laboratuvar</h3>
+                <p>Hemogram, biyokimya, hormon analizleri ve paraziter testler ile hızlı laboratuvar hizmeti.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== İLETİŞİM ===== -->
+<section class="section section-alt" id="iletisim">
+    <div class="container">
+        <div class="section-header">
+            <h2>İletişim</h2>
+            <p>Bize ulaşın, dostlarınız için en iyi bakımı birlikte planlayalım</p>
+            <div class="accent-line"></div>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <h4>Adres</h4>
+                        <p>Pınarbaşı Mahallesi, Aşıkpaşa Caddesi No:53/2-B<br>Keçiören, Ankara 06280</p>
+                        <a href="https://maps.google.com/?cid=2420207820986892785" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i> Google Haritalar'da Gör
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                    <div>
+                        <h4>Telefon</h4>
+                        <p><a href="tel:+905058778488">0505 877 84 88</a></p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                    <div>
+                        <h4>WhatsApp</h4>
+                        <p><a href="https://wa.me/905058778488" target="_blank" rel="noopener">0505 877 84 88</a></p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon"><i class="fab fa-instagram"></i></div>
+                    <div>
+                        <h4>Sosyal Medya</h4>
+                        <p>
+                            <a href="https://www.instagram.com/keciorenpinarbasiveteriner" target="_blank" rel="noopener">@keciorenpinarbasiveteriner</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Çalışma Saatleri -->
+                <div class="hours-table">
+                    <h3><i class="far fa-clock"></i> Çalışma Saatleri</h3>
+                    <div class="hours-row">
+                        <span class="day">Pazartesi - Cumartesi</span>
+                        <span class="time">09:00 - 21:00</span>
+                    </div>
+                    <div class="hours-row">
+                        <span class="day">Pazar</span>
+                        <span class="time">09:00 - 21:00</span>
+                    </div>
+                    <div class="hours-row" style="border-top:2px solid #f0fdf4;padding-top:10px;margin-top:6px;">
+                        <span class="day"><strong>Acil Telefon</strong></span>
+                        <span class="time" style="font-size:16px;"><a href="tel:+905058778488">0505 877 84 88</a></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Harita -->
+            <div>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000!2d32.859812!3d39.954037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2195b5b5b5b5b5b5!2sKe%C3%A7i%C3%B6ren%20P%C4%B1narba%C5%9F%C4%B1%20Veteriner%20Klini%C4%9Fi!5e0!3m2!1str!2str!4v1"
+                        width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== WHATSAPP FLOAT ===== -->
+<a href="https://wa.me/905058778488" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="brand">
+                    <div class="brand-icon" style="width:40px;height:40px;font-size:20px;">🐾</div>
+                    <div class="brand-text">
+                        <h1 style="font-size:17px;">Pınarbaşı Veteriner</h1>
+                        <span style="font-size:11px;">Keçiören · Ankara</span>
+                    </div>
+                </div>
+                <p>Keçiören Pınarbaşı'nda evcil dostlarınız için modern veteriner hizmeti. 43'ten fazla hizmet kategorisiyle haftanın 7 günü yanınızdayız.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Hızlı Bağlantılar</h4>
+                <a href="#hakkimizda">Hakkımızda</a>
+                <a href="#hizmetler">Hizmetler</a>
+                <a href="#iletisim">İletişim</a>
+            </div>
+            <div class="footer-col">
+                <h4>İletişim</h4>
+                <a href="tel:+905058778488">📞 0505 877 84 88</a>
+                <a href="https://wa.me/905058778488" target="_blank">💬 WhatsApp</a>
+                <a href="https://www.instagram.com/keciorenpinarbasiveteriner" target="_blank">📸 Instagram</a>
+                <a href="https://maps.google.com/?cid=2420207820986892785" target="_blank">📍 Google Haritalar</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Keçiören Pınarbaşı Veteriner Kliniği · Tüm hakları saklıdır</span>
+            <span>🐾 Sevgiyle bakım, güvenle tedavi</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.getElementById('mainNav').classList.toggle('open');
+    }
+    document.querySelectorAll('.main-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.getElementById('mainNav').classList.remove('open');
+            document.querySelectorAll('.main-nav a').forEach(a => a.classList.remove('active'));
+            link.classList.add('active');
+        });
+    });
+</script>
+
+</body>
+</html>
