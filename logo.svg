@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Arka plan daire -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16a34a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="innerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d2d4e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Dış halka -->
+  <circle cx="256" cy="256" r="248" fill="url(#bgGrad)" stroke="#16a34a" stroke-width="8"/>
+  <!-- İç daire -->
+  <circle cx="256" cy="256" r="200" fill="url(#innerGrad)"/>
+  <!-- Haç (artı) işareti - veteriner sembolü -->
+  <rect x="176" y="130" width="160" height="30" rx="15" fill="#22c55e"/>
+  <rect x="128" y="178" width="30" height="170" rx="15" fill="#22c55e"/>
+  <rect x="354" y="178" width="30" height="170" rx="15" fill="#22c55e"/>
+  <rect x="176" y="330" width="160" height="30" rx="15" fill="#22c55e"/>
+  <!-- Pati izleri -->
+  <circle cx="160" cy="210" r="14" fill="#4ade80" opacity="0.5"/>
+  <circle cx="352" cy="210" r="14" fill="#4ade80" opacity="0.5"/>
+  <circle cx="256" cy="260" r="12" fill="#4ade80" opacity="0.3"/>
+  <!-- Veteriner haçının ortasında küçük kalp -->
+  <path d="M256 240 C256 240 240 225 240 215 C240 205 250 195 256 200 C262 195 272 205 272 215 C272 225 256 240 256 240Z" fill="#4ade80" opacity="0.7"/>
+</svg>
